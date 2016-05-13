@@ -1,0 +1,11 @@
+<div>
+  <h3>Slimetorpedo targets on bliffoscope data</h3>
+  <textarea class='target-image' rows='10'*ngIf='slimetorpedoSearch && slimetorpedoSearch.targetsFoundTextImage != null'>
+    {{ slimetorpedoSearch.targetsFoundTextImage }}
+  </textarea>
+
+  <h3>Slimetorpedo target list with target type and coordinates</h3>
+  <textarea class='target-text' rows='5'*ngIf='slimetorpedoSearch && slimetorpedoSearch.targetsFoundText != null'>
+    {{ slimetorpedoSearch.targetsFoundText }}
+  </textarea>
+</div>

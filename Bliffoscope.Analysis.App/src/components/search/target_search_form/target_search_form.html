@@ -1,0 +1,58 @@
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">{{ targetSearchFormTitle }}</span>
+    </md-card-title-text>
+  </md-card-title>
+
+  <md-card-content>
+    <p>{{ targetSearchFormDescription }}</p>
+
+    <br />
+    
+    <div class="form-group">
+      <form [ngFormModel]="targetSearchForm" (ngSubmit)="onSubmit(targetSearchForm.value)">
+
+        <div [class.error]="!targetSearchForm.find('starshipMatchPercentage').valid && targetSearchForm.find('starshipMatchPercentage').touched">
+          <label class="label-move" for="starshipMatchPercentage"><span class="label label-success">Starship match percentage</span></label>
+
+          <input class="form-control" type="text" id="starshipMatchPercentage" placeholder="Starship match percentage"
+            [ngFormControl]="targetSearchForm.controls['starshipMatchPercentage']">
+
+          <div *ngIf="!starshipMatchPercentage.valid" class="alert alert-danger">Starship match percentage is invalid</div>
+          <div *ngIf="starshipMatchPercentage.hasError('required')" class="alert alert-danger">Starship match percentage is required</div>
+          <div *ngIf="starshipMatchPercentage.hasError('invalidPercentage')" class="alert alert-danger">Percentage must be a number</div>
+        </div>
+
+        <br/>
+
+        <div [class.error]="!targetSearchForm.find('slimetorpedoMatchPercentage').valid && targetSearchForm.find('slimetorpedoMatchPercentage').touched">
+          <label class="label-move" for="slimetorpedoMatchPercentage"><span class="label label-success">Slimetorpedo match percentage</span></label>
+
+          <input class="form-control" type="text" id="slimetorpedoMatchPercentage" placeholder="Slimetorpedo match percentage"
+            [ngFormControl]="targetSearchForm.controls['slimetorpedoMatchPercentage']">
+
+          <div *ngIf="!slimetorpedoMatchPercentage.valid" class="alert alert-danger">Slimetorpedo match percentage is invalid</div>
+          <div *ngIf="slimetorpedoMatchPercentage.hasError('required')" class="alert alert-danger">Slimetorpedo match percentage is required</div>
+          <div *ngIf="slimetorpedoMatchPercentage.hasError('invalidPercentage')" class="alert alert-danger">Percentage must be a number</div>
+        </div>
+
+        <div>
+          <label class="label-move" for="bliffoscopeImage"><span class="label label-success">Bliffoscope Image</span></label>
+          <textarea class="form-control" rows='10' [ngFormControl]="targetSearchForm.controls['bliffoscopeImage']">
+          </textarea>
+        </div>
+
+        <br/>
+
+        <div *ngIf="!targetSearchForm.valid" class="alert alert-danger">Target search form is invalid</div>
+
+        <md-card-actions layout="row" layout-align="end center">
+          <button md-raised-button type="submit" class="md-raised md-raised-button">{{ targetSearchButtonText }}</button>
+        </md-card-actions>
+
+      </form>
+    </div>
+  </md-card-content>
+
+</md-card>

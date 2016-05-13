@@ -1,0 +1,37 @@
+.parent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /*outline: 1px solid yellow;*/
+}
+
+.child {
+  width: 500px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  order: 0;
+  align-items: flex-start;
+  /*outline: 1px solid yellow;*/
+}
+
+.child-1 {
+  width: 300px;
+  flex-grow: 1;
+}
+
+.child-2 {
+  width: 400px;
+  height: 125px;
+  flex-grow: 1;
+}
+
+.child-3 {
+  width: 300px;
+  flex-grow: 1;
+}
+
+.child-4 {
+  width: 1000px;
+  flex-grow: 5;
+}

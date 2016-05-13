@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bliffoscope Analysis App</title>
+
+    <!-- Resources -->
+    <link rel="icon" type="image/png" href="/resources/images/biqhapi-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/resources/images/biqhapi.ico" />
+
+    <!-- Libraries -->
+    <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/node_modules/es6-shim/es6-shim.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="/node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="/node_modules/concurrently/node_modules/rx/dist/rx.lite.js"></script>
+    <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="/node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="/node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/ng2-material/dist/ng2-material.min.js"></script>
+    <script src="/node_modules/ng2-material/core/util/ink.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/src/components/app/app.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="node_modules/ng2-material/dist/ng2-material.css">
+    <link rel="stylesheet" href="node_modules/ng2-material/dist/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+<!-- Configure System.js, our module loader -->
+  <body>
+    <script>
+        System.config({
+            packages: {
+              src: {
+                format: 'register',
+                defaultExtension: 'js'
+              },
+              'ng2-material': {
+                  defaultExtension: 'js'
+               }
+            },
+            map: {
+                'ng2-material': 'node_modules/ng2-material'
+          },
+        });
+        System.import('./src/components/app/app.js')
+            .then(null, console.error.bind(console));
+    </script>
+
+    <bliffoscope-analysis-app>Loading...</bliffoscope-analysis-app>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+Instructions
+============================================================
+1. get the webapi service up and running:
+   open Bliffoscope.Analysis\Bliffoscope.Analysis.sln in vs2105
+   code is already compiled, press f5 to run
+   it will start up a the default web browser with this url
+   http://localhost:49990/
+
+2. get the angular 2 app up and running
+   git bash to Bliffoscope.Analysis.App
+   type -> nom run go
+   this will start the web browser with the following url
+   http://localhost:8080/#/targetsearchview
+   press -> analyze bliffoscope image button and wait for the results to show up.
+
+3. Important note. if the web api service happens to start at a different port than 49990
+   then change the port number at this line accordingly 
+   this.baseUrl = 'http://localhost:49990';
+   in http_client_service.ts under
+   Bliffoscope.Analysis\Bliffoscope.Analysis.App\src\components\service

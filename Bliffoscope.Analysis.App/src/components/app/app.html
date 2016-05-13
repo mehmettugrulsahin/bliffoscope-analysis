@@ -1,0 +1,45 @@
+<section class="material-app-content">
+
+  <md-toolbar class="md-whiteframe-z1">
+    <nav class="md-toolbar-tools">
+      <button md-button alt="Menu" class="md-icon-button" (click)="open('left')">
+        <i class="material-icons">line_weight</i>
+      </button>
+
+      <h1 flex>Bliffoscope</h1>
+
+      <button md-button alt="Home" class="md-icon-button" [routerLink]="['/Home']">
+        <i class="material-icons">home</i>
+      </button>
+
+      <button md-button alt="Home" class="md-icon-button" [routerLink]="['/About']">
+        <i class="material-icons">receipt</i>
+      </button>
+    </nav>
+  </md-toolbar>
+
+</section>
+
+<md-sidenav-container layout="row" flex>
+
+  <md-sidenav name="left">
+    <md-toolbar class="md-theme-indigo">
+      <h1 class="md-toolbar-tools">Analyze</h1>
+    </md-toolbar>
+
+    <md-list role="list">
+      <md-list-item md-ink="" role="listitem">
+        <div class="md-no-style md-list-item-inner" (click)="close('left')"
+          [routerLink]="['/TargetSearchView']">
+          Bliffoscope Data Analysis
+        </div>
+      </md-list-item>
+    </md-list>
+
+  </md-sidenav>
+
+  <md-content layout-padding layout="column" layout-align="center center">
+    <router-outlet></router-outlet>
+  </md-content>
+
+</md-sidenav-container>

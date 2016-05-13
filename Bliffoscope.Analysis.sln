@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bliffoscope.Analysis.Core", "Bliffoscope.Analysis.Core\Bliffoscope.Analysis.Core.csproj", "{BD5A57E7-1BE7-4F66-AB97-95A8D5F7354A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bliffoscope.Analysis.Configure", "Bliffoscope.Analysis.Configure\Bliffoscope.Analysis.Configure.csproj", "{45909B50-C8C0-4FF5-AD28-9F5BD57F08FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bliffoscope.Analysis.Runtime", "Bliffoscope.Analysis.Runtime\Bliffoscope.Analysis.Runtime.csproj", "{C858348A-20C4-4BFF-B47F-AC7F7D2740BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bliffoscope.Analysis.Api", "Bliffoscope.Analysis.Api\Bliffoscope.Analysis.Api.csproj", "{68AE10EB-6C96-482D-9D72-1B5A6CECA237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bliffoscope.Analysis.Test", "Bliffoscope.Analysis.Test\Bliffoscope.Analysis.Test.csproj", "{FB1A3579-C97C-4BEB-B656-A0F73F375BC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5A57E7-1BE7-4F66-AB97-95A8D5F7354A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5A57E7-1BE7-4F66-AB97-95A8D5F7354A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5A57E7-1BE7-4F66-AB97-95A8D5F7354A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5A57E7-1BE7-4F66-AB97-95A8D5F7354A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45909B50-C8C0-4FF5-AD28-9F5BD57F08FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45909B50-C8C0-4FF5-AD28-9F5BD57F08FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45909B50-C8C0-4FF5-AD28-9F5BD57F08FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45909B50-C8C0-4FF5-AD28-9F5BD57F08FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C858348A-20C4-4BFF-B47F-AC7F7D2740BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C858348A-20C4-4BFF-B47F-AC7F7D2740BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C858348A-20C4-4BFF-B47F-AC7F7D2740BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C858348A-20C4-4BFF-B47F-AC7F7D2740BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68AE10EB-6C96-482D-9D72-1B5A6CECA237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AE10EB-6C96-482D-9D72-1B5A6CECA237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AE10EB-6C96-482D-9D72-1B5A6CECA237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AE10EB-6C96-482D-9D72-1B5A6CECA237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1A3579-C97C-4BEB-B656-A0F73F375BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1A3579-C97C-4BEB-B656-A0F73F375BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1A3579-C97C-4BEB-B656-A0F73F375BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1A3579-C97C-4BEB-B656-A0F73F375BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

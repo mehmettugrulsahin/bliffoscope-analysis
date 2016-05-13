@@ -1,0 +1,11 @@
+<div>
+  <h3>Starship targets on bliffoscope data</h3>
+  <textarea class='target-image' rows='10' readonly *ngIf='starshipSearch && starshipSearch.targetsFoundTextImage != null'>
+    {{ starshipSearch.targetsFoundTextImage }}
+  </textarea>
+
+  <h3>Starship target list with target type and coordinates</h3>
+  <textarea class='target-text' rows='5'*ngIf='starshipSearch && starshipSearch.targetsFoundText != null'>
+    {{ starshipSearch.targetsFoundText }}
+  </textarea>
+</div>

@@ -1,0 +1,7 @@
+.label-move {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.label-move:hover {
+  padding-left: 60px;
+}

@@ -1,0 +1,30 @@
+<div class="parent">
+    <target-search-form class="child child-1"
+      [targetSearchFormTitle]='targetSearchFormTitle'
+      [targetSearchFormDescription]='targetSearchFormDescription'
+      [targetSearchButtonText]='targetSearchButtonText'
+      [targetSearchRequest]='targetSearchRequest'
+      (targetSearchFormSubmit)='onTargetSearchFormSubmit($event)'>
+    </target-search-form>
+
+    <div *ngIf="targetSearchInProgress">
+      <md-card class="child child-2">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Target Search In Progress</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          Please wait...
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <target-search-list class="child child-3" *ngIf="!targetSearchInProgress"
+      [targetSearchList]='targetSearchList'>
+    </target-search-list>
+
+    <target-search class="child child-4" *ngIf="!targetSearchInProgress"
+      [targetSearch]='targetSearch'>
+    </target-search>
+</div>

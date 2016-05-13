@@ -1,0 +1,28 @@
+<div>
+  <md-card *ngIf='targetSearch'>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Found Targets</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      Starship and slimetorpedo targets found on bliffoscope data are shown below.
+    </md-card-content>
+  </md-card>
+</div>
+
+<md-card *ngIf='targetSearch && targetSearch.starshipSearch != null'>
+  <md-card-content>
+    <starship-search
+      [starshipSearch]='targetSearch.starshipSearch'>
+    </starship-search>
+  </md-card-content>
+</md-card>
+
+<md-card *ngIf='targetSearch && targetSearch.slimetorpedoSearch != null'>
+  <md-card-content>
+    <slimetorpedo-search
+      [slimetorpedoSearch]='targetSearch.slimetorpedoSearch'>
+    </slimetorpedo-search>
+  </md-card-content>
+</md-card>
